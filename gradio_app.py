@@ -10,7 +10,7 @@ import google.generativeai as genai
 # -----------------------------
 # Cấu hình Gemini API
 # -----------------------------
-genai.configure(api_key="AIzaSyBpZd1ohFfsacu-18tDO20RvaX6C9nYRLw")  # Thay bằng API key thật của bạn
+genai.configure(api_key="")  # Thay bằng API key thật của bạn
 GEMINI_MODEL_NAME = "models/embedding-001"
 
 # -----------------------------
@@ -117,7 +117,7 @@ def process_files(key_file, value_file):
     output += "\nPhân loại file upload:\n"
     output += f"- Theo SentenceTransformer, file gần giống với: {best_ref_st}\n"
     output += f"- Theo Gemini API, file gần giống với: {best_ref_gemini}\n"
-    output += f"- 1: Invoice, 2: Packing list, 3: Shipping instruction, 4: Label"
+    output += "- 1: Invoice, 2: Packing list, 3: Shipping instruction, 4: Label"
 
     return output
 
@@ -137,6 +137,9 @@ iface = gr.Interface(
 
 if __name__ == "__main__":
     iface.launch(server_name="192.168.1.100", server_port=8069, share=False)
+
+
+
 
 
 
