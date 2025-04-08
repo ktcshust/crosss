@@ -1,0 +1,7 @@
+Độ tương đồng giữa file 1 và file 2: 0.9688926935195923
+Độ tương đồng giữa file 1 và file 3: 0.8700698614120483
+Độ tương đồng giữa file 2 và file 3: 0.8853058815002441
+Độ tương đồng giữa file 1 và file 4: 0.6961148977279663
+Độ tương đồng giữa file 2 và file 4: 0.7214380502700806
+Độ tương đồng giữa file 3 và file 4: 0.7129547595977783
+(chua bo value)
